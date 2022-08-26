@@ -18,8 +18,18 @@ console.log("");
 
 console.log("Dado um array de produtos, onde cada produto é um objeto com nome, preço e categoria, retorne um novo array com o nome dos produtos da categoria Limpeza.");
 
+// const produtosDeLimpeza = produtos.filter((limpeza) => {
+//     return limpeza.categoria === 'Limpeza';
+// });
+
 const produtosDeLimpeza = produtos.filter((limpeza) => {
     return limpeza.categoria === 'Limpeza';
 });
 
-console.log(produtosDeLimpeza);
+// console.log(produtosDeLimpeza);
+
+const nomes = produtosDeLimpeza.map((objeto) => {
+    return objeto.nome;
+})
+
+console.log(nomes);
